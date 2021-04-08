@@ -1,0 +1,22 @@
+{
+    "name": "oberonlai/wp-page-template-loader",
+    "description": "Register and render Page templates from your plugin.",
+    "homepage": "https://github.com/oberonlai/wp-page-template-loader",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oberon Lai",
+            "email": "m615926@gmail.com",
+            "homepage": "https://oberonlai.blog"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "ODS\\": "src/"
+        }
+    }
+}
