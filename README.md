@@ -14,7 +14,7 @@ It's super simple. Run this somewhere in your WordPress plugin:
 <?php
     use ODS\PageTemplateLoader;
 
-    $pageTemplates = new ODS\PageTemplateLoader();
+    $pageTemplates = new PageTemplateLoader();
     $pageTemplates->addTemplate(
         WP_PLUGIN_DIR . '/my-custom-plugin/templates/template1.php'  => 'templateName1',
         WP_PLUGIN_DIR . '/my-custom-plugin/templates/template2.php'  => 'templateName2',
@@ -22,15 +22,14 @@ It's super simple. Run this somewhere in your WordPress plugin:
 ```
 
 This adds the template to your WordPress site's Page edit interface.
-The ``addTemplate()`` function takes two params:
+The ``addTemplate()`` function takes one array:
 
 ```php
 
     /**
      * Add a new custom template.
      *
-     * @param $file string Full path to the template file
-     * @param $name string Human-readable template name
+     * @param $template array of file path and template name
      */
     public function addTemplate( Array $template )
     {

@@ -8,7 +8,6 @@ namespace ODS;
  *
  * Class PageTemplateLoader
  *
- * @package Codelight\PageTemplateLoader
  */
 class PageTemplateLoader
 {
